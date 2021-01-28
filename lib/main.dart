@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/homepage.dart';
+import 'package:flutter_demo/widgets/loadingimage.dart';
 
 void main() {
   runApp(
@@ -15,7 +16,7 @@ void main() {
       initialRoute: '/',
       routes: {
         '/': (context) => Homepage(),//MyApp(), //splash screen page
-        // Login.routeName: (context) => Login(),//login page
+        LoadingImage.routeName: (context) => LoadingImage(),//login page
         // Register.routeName: (context) => Register(),//register page
         // Homepage.routeName: (context) => Homepage(),//homepage
 
