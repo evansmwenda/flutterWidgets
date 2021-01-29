@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/screens/fingerprint_auth.dart';
 import 'package:flutter_demo/screens/settings.dart';
 import 'package:flutter_demo/widgets/loadingimage.dart';
 
@@ -14,6 +15,9 @@ class Homepage extends StatelessWidget {
     }
     void _gotoSettings() {
       Navigator.pushNamed(context, Settings.routeName);
+    }
+    void _gotoFingerPrint() {
+      Navigator.pushNamed(context, FingerPrintAuth.routeName);
     }
 
     return Scaffold(
@@ -60,6 +64,7 @@ class Homepage extends StatelessWidget {
             GestureDetector(
               onTap: () {
                 // handlers[index];
+                _gotoFingerPrint();
               },
               child: Container(
                 height: 50,
@@ -67,7 +72,7 @@ class Homepage extends StatelessWidget {
                 color: Colors.grey[300],
                 child: Center(
                   child: Text(
-                    '',
+                    'Fingerprint Auth',
                     style: TextStyle(color: Colors.black, fontSize: 17),
                   ),
                 ),
