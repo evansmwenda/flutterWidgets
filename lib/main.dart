@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/screens/container.dart';
 import 'package:flutter_demo/screens/fingerprint_auth.dart';
 import 'package:flutter_demo/screens/homepage.dart';
 import 'package:flutter_demo/screens/settings.dart';
@@ -21,6 +22,7 @@ void main() {
         LoadingImage.routeName: (context) => LoadingImage(),//LoadingImage page
         Settings.routeName: (context) => Settings(),//Settings page
         FingerPrintAuth.routeName: (context) => FingerPrintAuth(),//FingerPrintAuth
+        ContainerWidget.routeName: (context) => ContainerWidget(),//ContainerWidget
 
 
       },
