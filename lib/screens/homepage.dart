@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/container.dart';
 import 'package:flutter_demo/screens/fingerprint_auth.dart';
+import 'package:flutter_demo/screens/scaffold.dart';
 import 'package:flutter_demo/screens/settings.dart';
 import 'package:flutter_demo/widgets/loadingimage.dart';
 
@@ -22,6 +23,9 @@ class Homepage extends StatelessWidget {
     }
     void _gotoContainerWidget() {
       Navigator.pushNamed(context, ContainerWidget.routeName);
+    }
+    void _gotoScaffoldWidget() {
+      Navigator.pushNamed(context, ScaffoldWidget.routeName);
     }
 
     return Scaffold(
@@ -94,6 +98,23 @@ class Homepage extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Container',
+                    style: TextStyle(color: Colors.black, fontSize: 17),
+                  ),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                // handlers[index];
+                _gotoScaffoldWidget();
+              },
+              child: Container(
+                height: 50,
+                margin: EdgeInsets.symmetric(vertical: 10),
+                color: Colors.grey[300],
+                child: Center(
+                  child: Text(
+                    'Scaffold',
                     style: TextStyle(color: Colors.black, fontSize: 17),
                   ),
                 ),

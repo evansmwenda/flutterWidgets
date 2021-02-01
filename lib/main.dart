@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/container.dart';
 import 'package:flutter_demo/screens/fingerprint_auth.dart';
 import 'package:flutter_demo/screens/homepage.dart';
+import 'package:flutter_demo/screens/scaffold.dart';
 import 'package:flutter_demo/screens/settings.dart';
 import 'package:flutter_demo/widgets/loadingimage.dart';
 
@@ -23,6 +24,7 @@ void main() {
         Settings.routeName: (context) => Settings(),//Settings page
         FingerPrintAuth.routeName: (context) => FingerPrintAuth(),//FingerPrintAuth
         ContainerWidget.routeName: (context) => ContainerWidget(),//ContainerWidget
+        ScaffoldWidget.routeName: (context) => ScaffoldWidget(),//ScaffoldWidget
 
 
       },
