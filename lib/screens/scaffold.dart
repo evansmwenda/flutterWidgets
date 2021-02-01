@@ -37,7 +37,7 @@ class ScaffoldWidget extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.mail),
-            title: new Text("Bottom Nav Bar Item 2"),
+            label: "Bottom Nav Bar Item 2",
           )
         ],
       ),
