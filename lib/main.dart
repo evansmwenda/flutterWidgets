@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/container.dart';
+import 'package:flutter_demo/screens/expansion_panel.dart';
 import 'package:flutter_demo/screens/fingerprint_auth.dart';
+import 'package:flutter_demo/screens/gridtile.dart';
 import 'package:flutter_demo/screens/homepage.dart';
 import 'package:flutter_demo/screens/scaffold.dart';
 import 'package:flutter_demo/screens/settings.dart';
@@ -25,6 +27,8 @@ void main() {
         FingerPrintAuth.routeName: (context) => FingerPrintAuth(),//FingerPrintAuth
         ContainerWidget.routeName: (context) => ContainerWidget(),//ContainerWidget
         ScaffoldWidget.routeName: (context) => ScaffoldWidget(),//ScaffoldWidget
+        ExpansionedTile.routeName: (context) => ExpansionedTile(),//ScaffoldWidget
+        GridTileWidget.routeName: (context) => GridTileWidget(),//GridTileWidget
 
 
       },

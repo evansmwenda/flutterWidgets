@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/container.dart';
+import 'package:flutter_demo/screens/expansion_panel.dart';
 import 'package:flutter_demo/screens/fingerprint_auth.dart';
+import 'package:flutter_demo/screens/gridtile.dart';
 import 'package:flutter_demo/screens/scaffold.dart';
 import 'package:flutter_demo/screens/settings.dart';
 import 'package:flutter_demo/widgets/loadingimage.dart';
@@ -27,6 +29,13 @@ class Homepage extends StatelessWidget {
     void _gotoScaffoldWidget() {
       Navigator.pushNamed(context, ScaffoldWidget.routeName);
     }
+    void _gotoExpansionTile() {
+      Navigator.pushNamed(context, ExpansionedTile.routeName);
+    }
+    void _gotoGridTileWidget() {
+      Navigator.pushNamed(context, GridTileWidget.routeName);
+    }
+
 
     return Scaffold(
         appBar: AppBar(
@@ -115,6 +124,40 @@ class Homepage extends StatelessWidget {
                 child: Center(
                   child: Text(
                     'Scaffold',
+                    style: TextStyle(color: Colors.black, fontSize: 17),
+                  ),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                // handlers[index];
+                _gotoExpansionTile();
+              },
+              child: Container(
+                height: 50,
+                margin: EdgeInsets.symmetric(vertical: 10),
+                color: Colors.grey[300],
+                child: Center(
+                  child: Text(
+                    'Expansioned Tile',
+                    style: TextStyle(color: Colors.black, fontSize: 17),
+                  ),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                // handlers[index];
+                _gotoGridTileWidget();
+              },
+              child: Container(
+                height: 50,
+                margin: EdgeInsets.symmetric(vertical: 10),
+                color: Colors.grey[300],
+                child: Center(
+                  child: Text(
+                    'GridTile',
                     style: TextStyle(color: Colors.black, fontSize: 17),
                   ),
                 ),
